@@ -22,21 +22,21 @@ const mains = [
   food(
     "Jelly Pizza",
     "5",
-    "A luscious chocolate base topped richly with sheening jelly pieces",
+    "A luscious chocolate base topped richly with sheening jelly pieces!",
     pizzaImg,
     "an image of pizza with chocolate base and jelly toppings"
   ),
   food(
     "Jelly fruit jar",
     "4",
-    "A jar filled with delicious fresh fruit coated in our signature jelly",
+    "A jar filled with delicious fresh fruit coated in our signature jelly!",
     jellyFruitImg,
     "a jar overflowing with raspberries and jelly"
   ),
   food(
     "Mellow jolly jar",
     "4",
-    "Delicious marshmallow softness covered in rainbowy jelly.",
+    "Delicious marshmallow softness covered in rainbowy jelly!",
     jellyMallowImg,
     "a jar with marshmallows and colourful jelly"
   ),

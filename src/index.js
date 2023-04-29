@@ -2,11 +2,7 @@ import { generateHeader } from "./header";
 import { generateMain } from "./home";
 import { generateMenu } from "./menu";
 import { generateContact } from "./contact";
-
-generateHeader();
-generateMain();
-
-let tabs = document.querySelectorAll(".tab");
+import "./styles.css";
 
 const functionMap = {
   home: generateMain,
@@ -14,7 +10,15 @@ const functionMap = {
   contact: generateContact,
 };
 
+generateHeader();
+generateMain();
+
+const tabs = document.querySelectorAll(".tab");
+
 tabs.forEach((el) => {
+  if (el.textContent === "Home") {
+    el.classList.add("active");
+  }
   el.addEventListener("click", (event) => {
     event.preventDefault();
 

@@ -12,12 +12,13 @@ function generateMenu() {
 function generateMenuSection(title, list) {
   let domSection = document.createElement("div");
   domSection.classList.add("menu-section");
-  let header = document.createElement("h2");
-  header.textContent = title;
-  domSection.appendChild(header);
   for (let i = 0; i < list.length; ++i) {
     domSection.appendChild(generateMenuItem(list[i]));
   }
+
+  let header = document.createElement("h2");
+  header.textContent = title;
+  content.appendChild(header);
   content.appendChild(domSection);
 }
 
@@ -31,12 +32,12 @@ function generateMenuItem(item) {
   const priceElement = document.createElement("p");
   priceElement.textContent = "£" + item.price;
 
-  const descrElement = document.createElement("p");
-  descrElement.textContent = item.description;
-
   const imageElement = new Image();
   imageElement.src = item.image;
   imageElement.alt = item.alt;
+
+  const descrElement = document.createElement("p");
+  descrElement.textContent = item.description;
 
   newItem.appendChild(nameElement);
   newItem.appendChild(priceElement);

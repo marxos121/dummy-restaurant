@@ -7,6 +7,7 @@ function generateHeader() {
 
   const headerPicture = new Image();
   headerPicture.src = headerIcon;
+  headerPicture.classList.add("header-img");
 
   const headerLinks = document.createElement("ul");
 
